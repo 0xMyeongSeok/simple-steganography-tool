@@ -144,3 +144,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/python,windows,visualstudiocode
+
+# This is for GitKraken GUI
+.vscode/
+
+*.jpg
