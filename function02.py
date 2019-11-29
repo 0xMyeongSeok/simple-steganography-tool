@@ -13,9 +13,10 @@ def function02():
     data = input("삽입할 데이터(문자열) 입력 >> ")
 
     try:
-        data = \
-            b"\xFF\xE1\x00\x11\x45\x78\x69\x66\x00\x00\x4D\x4D\x00\x2A\x00\x00\x00\x08" \
+        data = (
+            b"\xFF\xE1\x00\x11\x45\x78\x69\x66\x00\x00\x4D\x4D\x00\x2A\x00\x00\x00\x08"
             + data.encode()
+        )
 
         insert_bytes_into_file(file_path, 20, data)
 

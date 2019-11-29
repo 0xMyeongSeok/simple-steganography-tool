@@ -2,10 +2,8 @@ import sys
 import os
 from my_lib import search_bytes_r
 
-"""
-jpg file의 EOI 뒤에 데이터 삽입하기
-"""
 
+# jpg file의 EOI 뒤에 데이터 삽입하기
 def function01():
     
     file_path = input("파일 경로 입력 >> ")
@@ -25,10 +23,7 @@ def function01():
         return -1
 
 
-"""
-jpg file의 EOI 뒤에 삽입된 데이터 지우기
-"""
-
+# jpg file의 EOI 뒤에 삽입된 데이터 지우기
 def function01_recover():
 
     file_path = input("복구할 파일 경로 입력 >> ")
