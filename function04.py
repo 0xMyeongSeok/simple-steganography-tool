@@ -47,12 +47,10 @@ def function04():
         print("비교 끝")
         myFile1.close()
         myFile2.close()
+        input("[+] 계속하시려면 엔터를 누르세요")
         return 0
 
     except FileNotFoundError:
         print("[!] 해당하는 파일이 없습니다.", file=sys.stderr)
-        return -1
-
-    except PermissionError:
-        print("[!] Permission denied. 해당 파일이 열려있는지 확인하세요.", file=sys.stderr)
+        input("[+] 계속하시려면 엔터를 누르세요")
         return -1

@@ -191,10 +191,4 @@ def inject_data_into_bmp(target_path, source_path):
     print(
         "[+] All completed. {} created".format("new_" + os.path.basename(target_path))
     )
-
-    return 0
-
-
-if __name__ == "__main__":
-    inject_data_into_bmp("./dog.bmp", "./source")
     
