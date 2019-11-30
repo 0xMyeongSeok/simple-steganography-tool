@@ -1,4 +1,5 @@
-from function01 import function01, function01_recover
+from my_lib import clear_screen
+from function01 import function01, function01_extract_data
 from function02 import function02, function02_recover
 from function04 import function04
 
@@ -19,6 +20,7 @@ def print_menu():
 if __name__ == "__main__" :
     
     while(True):
+        clear_screen()
         print_menu()
         try:
             choice = int(input("원하시는 기능의 번호를 입력하세요: "))
@@ -29,7 +31,7 @@ if __name__ == "__main__" :
                 function01()
             
             elif choice == 2:
-                function01_recover()
+                function01_extract_data()
 
             elif choice == 3:
                 function02()
