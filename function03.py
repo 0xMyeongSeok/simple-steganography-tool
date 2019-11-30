@@ -43,6 +43,7 @@ def function03_extract_data():
     for i in range(0, 64):
         if (ord(old_file.read(1)) & 0x01) > 0:
             data_size |= 1 << (63 - i)
+    print("injected file size :", data_size)
 
     # Read injected file data
     for i in range(0, data_size):
@@ -51,7 +52,7 @@ def function03_extract_data():
             if (ord(old_file.read(1)) & 0x01) > 0:
                 value |= 1 << (7 - j)
 
-        byte = chr(value).encode()
+        byte = bytes([value])
         new_file.write(byte)
 
     old_file.close()
