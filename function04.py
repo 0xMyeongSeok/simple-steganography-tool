@@ -16,6 +16,7 @@ def function04():
         len1 = len(string1)
         len2 = len(string2)
         base = 0
+        chk = 0
 
         if len1 > len2:
             base = len1
@@ -43,8 +44,12 @@ def function04():
                     ", 파일2 내용 :",
                     chr(string2[pos]),
                 )
+                chk += 1
 
-        print("비교 끝")
+        if chk == 0:
+            print("두 파일이 같습니다!")
+        else:
+            print("비교 끝")
         myFile1.close()
         myFile2.close()
         input("[+] 계속하시려면 엔터를 누르세요")
