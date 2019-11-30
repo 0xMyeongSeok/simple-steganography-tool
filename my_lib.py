@@ -1,5 +1,15 @@
 import os
 import struct
+import subprocess
+import sys
+
+
+if sys.platform.startswith("win"):
+    def clear_screen():
+        subprocess.call(["cmd.exe", "/C", "cls"])
+else:
+    def clear_screen():
+        subprocess.call(["clear"])
 
 
 def search_bytes_r(file_path, marker, buffer_size=1024):
