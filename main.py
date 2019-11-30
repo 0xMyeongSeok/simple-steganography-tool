@@ -1,6 +1,6 @@
 from my_lib import clear_screen
 from function01 import function01, function01_extract_data
-from function02 import function02, function02_recover
+from function02 import function02, function02_extract_data
 from function04 import function04
 
 
@@ -37,7 +37,7 @@ if __name__ == "__main__" :
                 function02()
             
             elif choice == 4:
-                function02_recover()
+                function02_extract_data()
 
             elif choice == 5:
                 pass
