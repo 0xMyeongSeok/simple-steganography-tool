@@ -59,5 +59,6 @@ def function03_extract_data():
     new_file.close()
 
     print("[+] 숨겨진 데이터가 정상적으로 추출되었습니다.")
+    print("[+] 데이터를 확인하려면 출력 파일의 확장자명을 원본 파일과 똑같이 변경하세요.")
     print("위치 : {}".format(os.path.realpath(extract_file_path)))
     input("[+] 계속하시려면 엔터를 누르세요")
