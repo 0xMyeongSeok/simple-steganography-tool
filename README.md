@@ -18,14 +18,14 @@
 
 ### 기능3 추가 설명
 sample.bmp\
-![origin](./sample_images/sample.bmp)\
+![origin](./sample_images/sample.bmp)
 
 cat.bmp\
-![cat](./sample_images/cat.bmp)\
+![cat](./sample_images/cat.bmp)
 
 기능 3을 이용하여,
 sample.bmp 안에다가 cat.bmp를 숨긴 파일 new_sample.bmp\
-![result](./sample_images/new_sample.bmp)\
+![result](./sample_images/new_sample.bmp)
 
 원본 이미지 sample.bmp와
 기능 3으로 cat.bmp를 숨긴 이미지는 육안으로 차이를 구별할 수 없다.
